@@ -293,5 +293,10 @@ function runAway(){
   no.style.top=(Math.random()*maxY-maxY/2)+'px';
 }
 </script>
+  <script>
+document.querySelectorAll('img[src^="images/"]').forEach(img => {
+  img.src = img.src.replace('images/', '');
+});
+</script>
 </body>
 </html>
